@@ -1,1 +1,12 @@
+body{
+ background-color: rgb(10, 4, 36);
+}
+
+h1{
+    color: whitesmoke;
+    text-align: center;
+    font-family: sans-serif;
+    text-transform: capitalize;
+    font-weight: 800;
+}
 
