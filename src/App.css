@@ -5,8 +5,20 @@ body{
 h1{
     color: whitesmoke;
     text-align: center;
-    font-family: sans-serif;
+    font-family:  'Quicksand';
     text-transform: capitalize;
     font-weight: 800;
 }
 
+p{
+    color: whitesmoke;
+    text-align: center;
+    font-family:  'Quicksand';
+    font-weight: 200;
+}
+
+.mainText-container{
+    align-content: center;
+    margin: 10px auto; 
+    width: 500px
+}
