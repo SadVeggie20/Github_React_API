@@ -1,7 +1,11 @@
 import React from 'react'
 
-export const TreadCatch = ({ id, title, description, url, price, quantity }) => {
+export const TreadCatch = ({ html_url, title }) => {
   return (
-    <div>TreadCatch</div>
+    <div className='tread-container'>
+    <a target={'blank'} href={`${html_url}`}>
+        <p>{title}</p>
+    </a>
+    </div>
   )
 }

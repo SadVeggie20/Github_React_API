@@ -21,10 +21,12 @@ export const Home = () => {
     <div>
     <div className='mainText-container'>
     <h1>Github React Issues</h1>
-    <p>
+    <p className='p-main'>
       Esta es una pagina que utiliza la API de github para ver los Hilos relacionados con los problemas existentes en React
     </p>
+    </div>
 
+    <div className='row-container'>
     <div className='row'>
         {
         data.map((item) => (
@@ -32,7 +34,8 @@ export const Home = () => {
         ))
       }
       </div>
-    </div>
+      </div>
+      
     </div>
     
   )
