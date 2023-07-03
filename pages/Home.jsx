@@ -1,5 +1,7 @@
 import {useState, useEffect} from 'react'
 import { TreadCatch } from '../components/TreadCatch'
+import { Footer } from '../components/Footer'
+import { Header } from '../components/Header'
 
 export const Home = () => {
   const request = new Request('https://api.github.com/repos/facebook/react/issues')
@@ -18,6 +20,8 @@ export const Home = () => {
   }, [])
 
   return (
+    <>
+    <Header/>
     <div>
     <div className='mainText-container'>
     <h1>Github React Issues</h1>
@@ -25,6 +29,11 @@ export const Home = () => {
       Esta es una pagina que utiliza la API de github para ver los Hilos relacionados con los problemas existentes en React
     </p>
     </div>
+
+    <div clasName='searchbar-container'>
+
+    </div>
+
 
     <div className='headTable'>
           <div className="id-head">
@@ -46,6 +55,7 @@ export const Home = () => {
     </div>
 
     </div>
-    
+    <Footer/>
+    </>
   )
 }

@@ -1,3 +1,11 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* Otros estilos generales que desees aplicar */
+  }
+
+
 body{
  background-color: rgb(10, 4, 36);
 }
@@ -15,7 +23,7 @@ h1{
     text-align: center;
     font-family:  'Quicksand';
     font-weight: 300;
-    margin: 0px auto 30px auto; 
+    margin: 15px auto 30px auto; 
     max-width: 500px;
     font-size: 16px;
 }
@@ -29,9 +37,15 @@ p{
 
 .mainText-container{
     align-content: center;
-    margin: 50px auto; 
-    width: 90%;
+    margin: 0px auto 30px; 
+    width: 100%;
     border-bottom: 4px solid #fdb347;
+    max-width: 1000px;
+    min-width: 500px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 50px;
+    padding-bottom: 10px;
 }
 
 .table {
@@ -51,39 +65,55 @@ p{
     max-width: 1000px;
     min-width: 500px;
     margin: 0 auto;
+    padding: 2px;
+    font-weight: 500;
 }
-
-
 
 .id{
     text-align: center;
-    border: 1px solid rgb(1, 177, 147);
+    background-color: rgba(201, 22, 22, 0.452);
     width: 15%;
     margin: 0 auto;
     min-width: 150px;
+    padding: 10px;
+    border-radius: 5px;
 }
 
 .user{
     text-align: center;
-    border: 1px solid  rgb(1, 177, 147);
+    background-color: rgba(201, 183, 22,0.452);
     margin: 0px auto;
     width: 15% ;
     min-width: 150px;
     margin: 0px 5px 0 5px;
+    padding: 10px;
+    border-radius: 5px;
 }
 
 .title{
     text-align: center;
-    border: 1px solid rgb(1, 177, 147);
+    background-color: rgba(22, 180, 201, .452);
     width: 70%;
     margin: 0 auto;
     padding-left: 5px;
     padding-right: 5px;
     min-width: 500px;
+    padding: 10px;
+    border-radius: 5px;
 }
 
-.footer{
+footer{
+    background-color: rgb(216, 99, 200);
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 10px;
+}
 
+header{
+    background-color: rgb(236, 102, 102);
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 10px;
 }
 
 .headTable{
@@ -106,6 +136,7 @@ p{
     width: 15%;
     margin: 0 auto;
     min-width: 150px;
+    padding: 10px;
 }
 
 .user-head{
@@ -114,6 +145,7 @@ p{
     margin: 0px 8px 0 8px;
     width: 15% ;
     min-width: 150px;
+    padding: 10px;
 }
 
 .title-head{
@@ -122,5 +154,6 @@ p{
     width: 70%;
     margin: 0 auto;
     min-width: 500px;
+    padding: 10px;
 
 }
