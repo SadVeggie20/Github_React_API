@@ -34,14 +34,14 @@ export const Home = () => {
     <>
     <Header/>
     <div>
-    <div className='mainText-container'>
+    <div className='search-container'>
     <h1>Github React Issues</h1>
     <p className='p-main'>
       Esta es una pagina que utiliza la API de github para ver los Hilos relacionados con los problemas existentes en React
     </p>
     </div>
 
-    <div clasName='searchbar-container'>
+    <div className='search-container'>
     <Searchbar handleSearchChange={handleSearchChange}/>
     </div>
 
@@ -63,9 +63,9 @@ export const Home = () => {
         ))
       }
     </div>
-
-    </div>
     <Footer/>
+    </div>
+    
     </>
   )
 }
