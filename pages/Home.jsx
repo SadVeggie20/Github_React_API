@@ -26,16 +26,25 @@ export const Home = () => {
     </p>
     </div>
 
-    <div className='row-container'>
-    <div className='row'>
+    <div className='headTable'>
+          <div className="id-head">
+          <p>ID</p>
+          </div>
+          <div className="user-head">
+          <p>User</p>
+          </div>
+          <div className="title-head">
+          <p>Title</p>
+          </div>
+    </div>
+    <div className='table'>
         {
         data.map((item) => (
-          <TreadCatch key={item.id} {...item} />
+         <TreadCatch key={item.id} {...item} />
         ))
       }
-      </div>
-      </div>
-      
+    </div>
+
     </div>
     
   )
