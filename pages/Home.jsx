@@ -2,10 +2,21 @@ import {useState, useEffect} from 'react'
 import { TreadCatch } from '../components/TreadCatch'
 import { Footer } from '../components/Footer'
 import { Header } from '../components/Header'
+import { Searchbar } from '../components/Searchbar'
 
 export const Home = () => {
   const request = new Request('https://api.github.com/repos/facebook/react/issues')
   const [data, setData] = useState([])
+  const [searchTerm, setSearchTerm] = useState('')
+
+  const handleSearchChange = (event) => {
+    setSearchTerm(event.target.value)
+  }
+
+  const filteredData = data.filter((item) => {
+    return item.title.toLowerCase().includes(searchTerm.toLowerCase())
+  })
+
   useEffect(() => {
 
     fetch(request)
@@ -31,9 +42,8 @@ export const Home = () => {
     </div>
 
     <div clasName='searchbar-container'>
-
+    <Searchbar handleSearchChange={handleSearchChange}/>
     </div>
-
 
     <div className='headTable'>
           <div className="id-head">
@@ -48,7 +58,7 @@ export const Home = () => {
     </div>
     <div className='table'>
         {
-        data.map((item) => (
+        filteredData.map((item) => (
          <TreadCatch key={item.id} {...item} />
         ))
       }
